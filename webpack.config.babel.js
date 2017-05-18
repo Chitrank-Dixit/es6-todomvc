@@ -18,6 +18,13 @@ const OfflinePlugin = require('offline-plugin');
 // then exclude it from the final bundle, even when that piece of code is exported from a module. Because ES6 modules are statically analyzable,
 // Webpack can determine which of your dependencies are used and which are not. In this lesson, see how to take advantage of this awesome feature in Webpack 2
 
+// A polyfill, or polyfiller, is a piece of code (or plugin) that provides the technology that you, the developer, expect the browser to provide natively.
+// Flattening the API landscape if you will
+
+// polyfill.js , to support promises in the all those browsers that do not have support for promises
+// Polyfill.io reads the User-Agent header of each request and returns polyfills that are suitable for the requesting browser.
+// Tailor the response based on the features you're using in your app
+
 module.exports = env => {
   const {ifProd, ifNotProd} = getIfUtils(env)
   const config = webpackValidator({
