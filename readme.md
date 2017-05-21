@@ -99,3 +99,45 @@ MIT
 [github-star]: https://github.com/kentcdodds/es6-todomvc/stargazers
 [twitter]: https://twitter.com/intent/tweet?text=Check%20out%20this%20fantastic%20webpack%20workshop!%20http://kcd.im/webpack-workshop-repo%20%F0%9F%98%8E
 [twitter-badge]: https://img.shields.io/twitter/url/https/kcd.im/webpack-workshop-repo.svg?style=social
+
+
+Notes:
+
+// there is a tool that validate the webpack properly the tool is webpack validator  // validate-webpack:dev to validate webpack at the development environment just run $ npm run validate-webpack:dev  // tree shaking will allow to reduce bundle (build or dist) sizes for large builds by analyzing exports and imports
+// using System.import ( as this is the promise and allows us to capture the responses better then simple import keywords
+
+// hashing with web pack for long term caching
+// Leveraging the browser cache is an important part of page load performance. A great way to utilize this cache is by versioning your resources. In this lesson, learn how to use Webpack’s hashing feature so you can take advantage of long term caching of your assets.
+This enables for the long term caching for our web pack project.
+
+
+// Grouping vendor files with the Webpack CommonsChunkPlugin
+// Often, you have dependencies which you rarely change. In these cases, you can leverage the CommonsChunkPlugin to automatically put these modules in a separate bundled file so they can be cached and loaded separately from the rest of your code (leveraging the browser cache much more effectively).
+
+// Chunking common modules from multiple apps with the Webpack CommonsChunkPlugin
+// If you have a multi-page application (as opposed to a single page app), you’re likely sharing modules between these pages. By chunking these common modules into a single common bundle, you can leverage the browser cache much more powerfully. In this lesson we’ll use webpack’s CommonsChunkPlugin to easily share common modules between apps.
+
+
+// Optimize React size and performance with Webpack production plugins
+// You can fine tune several webpack plugins to make your bundle as small as it can be for your specific application. However there are a few things you can do for pretty much every application to make it smaller and run faster. In this lesson we’ll combine several webpack plugins to optimize things for a React application (this is also applicable for non-React applications as well).
+
+// Import a non-ES6 module with Webpack
+// When you have a dependency that does not export itself properly, you can use the exports-loader to force it to export the pieces of the file that you need.
+
+// Expose modules to dependencies with Webpack
+// When you have a dependency that has dependencies on global variables (like jQuery or lodash) or assumes that this is bound to window, you can use the imports-loader to provide those dependencies explicitly.
+
+// Initialize a Webpack Project with Karma for Testing
+// There are several steps involved with setting up Karma to work on your webpack project. In this first step we'll initialize our karma configuration and setup our package.json scripts.
+
+// Use Chai assertions for tests in a Karma project
+// Chai assertions work great with the Mocha testing framework. In this lesson we'll walk through out to install Chai and karma-chai so you can use the expect assertions in your tests.
+
+// Use Karma for Unit Testing with Webpack
+// When writing tests run by Karma for an application that’s bundled with webpack, it’s easiest to integrate webpack and Karma directly together. In this lesson we’ll see how to utilize the karma-webpack plugin and reuse our existing webpack configuration to preprocess our test files with webpack.
+
+// Add Code Coverage to tests in a Webpack project
+// How much of your code runs during unit testing is an extremely valuable metric to track. Utilizing code the karma-coverage plugin and babel-plugin-__coverage__ plugin, we can get an accurate measure of how well we’re covering the files that we are testing.
+
+// Ensure all source files are included in test coverage reports with Webpack
+// If you’re only instrumenting the files in your project that are under test then your code coverage report will be misleading and it will be difficult for you to track or enforce improvements to application coverage over time. In this lesson we’ll learn how to ensure all source files are included in coverage reports and how to enforce a specific threshold so you can work toward improving application code coverage.
